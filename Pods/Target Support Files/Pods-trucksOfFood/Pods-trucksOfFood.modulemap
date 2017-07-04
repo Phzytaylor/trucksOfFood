@@ -1,0 +1,6 @@
+framework module Pods_trucksOfFood {
+  umbrella header "Pods-trucksOfFood-umbrella.h"
+
+  export *
+  module * { export * }
+}
