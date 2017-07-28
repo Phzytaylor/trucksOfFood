@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A291m" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2SS-nh-YaM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A306f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2SS-nh-YaM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,16 +10,96 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Settings Table View Controller-->
+        <scene sceneID="Geo-Cc-AMS">
+            <objects>
+                <tableViewController storyboardIdentifier="settings" id="d8E-Xx-2SS" customClass="SettingsTableViewController" customModule="trucksOfFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Gx0-Ii-qhW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="settings" id="AqP-FJ-ctY">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AqP-FJ-ctY" id="4pj-Kq-shx">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="d8E-Xx-2SS" id="xgu-rC-Xn2"/>
+                            <outlet property="delegate" destination="d8E-Xx-2SS" id="RQf-xC-muN"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="2SS-nh-YaM" kind="presentation" identifier="loggedout" id="Siy-LM-2Xo"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PPL-4I-K0T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1102" y="-2453"/>
+        </scene>
+        <!--Trucks For Location Table View Controller-->
+        <scene sceneID="d18-Ef-m4h">
+            <objects>
+                <tableViewController id="Hwn-Y6-wq6" customClass="TrucksForLocationTableViewController" customModule="trucksOfFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Bzi-wB-sW3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LocationRest" id="CKc-aL-vGQ">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CKc-aL-vGQ" id="juv-xa-a3l">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Hwn-Y6-wq6" id="LZ4-Tq-Qc1"/>
+                            <outlet property="delegate" destination="Hwn-Y6-wq6" id="kXO-yb-vCh"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="KBV-xG-ZoT" kind="show" identifier="changeLocation" id="Kah-Ab-AVN"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zjx-7X-9DB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2936" y="-2230"/>
+        </scene>
+        <!--Manual Location View Controller-->
+        <scene sceneID="EcE-b2-4V0">
+            <objects>
+                <viewController id="KBV-xG-ZoT" customClass="ManualLocationViewController" customModule="trucksOfFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ikc-v9-ZfX"/>
+                        <viewControllerLayoutGuide type="bottom" id="c3c-Pc-Vvh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZBJ-nV-6vF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yfT-7A-9BZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3834" y="-2220"/>
+        </scene>
+        <!--Truck List For Times Table View Controller-->
         <scene sceneID="ch9-Jw-Xsj">
             <objects>
-                <tableViewController id="dZ2-vB-dTg" sceneMemberID="viewController">
+                <tableViewController id="dZ2-vB-dTg" customClass="TruckListForTimesTableViewController" customModule="trucksOfFood" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="stT-D8-nKI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="OZi-ff-6Gc">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="truckNamesForTimes" id="OZi-ff-6Gc">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OZi-ff-6Gc" id="cn7-uW-yxN">
@@ -33,10 +113,125 @@
                             <outlet property="delegate" destination="dZ2-vB-dTg" id="qXE-4Q-SE3"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="7QW-bP-Vev" kind="show" identifier="truckTimes" id="h47-um-KIB"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yJg-pm-NoF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2918" y="-1554"/>
+        </scene>
+        <!--Truck Times Table View Controller-->
+        <scene sceneID="NUd-XA-sPF">
+            <objects>
+                <tableViewController id="7QW-bP-Vev" customClass="TruckTimesTableViewController" customModule="trucksOfFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="mrh-uA-1Dn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="hours" id="nmi-pk-ZMn" customClass="TimeCell" customModule="trucksOfFood" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nmi-pk-ZMn" id="OjK-TZ-GS6">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mao-rd-DeJ">
+                                            <rect key="frame" x="8" y="8" width="359" height="27.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGG-U3-ckI">
+                                            <rect key="frame" x="8" y="8" width="107" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Mao-rd-DeJ" firstAttribute="leading" secondItem="hGG-U3-ckI" secondAttribute="trailing" constant="-107" id="1Od-aA-DJJ"/>
+                                        <constraint firstItem="Mao-rd-DeJ" firstAttribute="leading" secondItem="OjK-TZ-GS6" secondAttribute="leadingMargin" id="Bz6-qb-lVT"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Mao-rd-DeJ" secondAttribute="bottom" id="CtK-Ke-d5U"/>
+                                        <constraint firstItem="Mao-rd-DeJ" firstAttribute="top" secondItem="OjK-TZ-GS6" secondAttribute="topMargin" id="KBg-lG-58l"/>
+                                        <constraint firstItem="hGG-U3-ckI" firstAttribute="top" secondItem="OjK-TZ-GS6" secondAttribute="topMargin" id="RsL-lp-q2d"/>
+                                        <constraint firstItem="hGG-U3-ckI" firstAttribute="leading" secondItem="OjK-TZ-GS6" secondAttribute="leadingMargin" id="fi6-aU-M7c"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="hGG-U3-ckI" secondAttribute="bottom" constant="4" id="w37-h2-QRQ"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Mao-rd-DeJ" secondAttribute="trailing" id="zqg-LD-e7H"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="openOrClosedLabel" destination="hGG-U3-ckI" id="yMW-Xs-zed"/>
+                                    <outlet property="timeLabel" destination="Mao-rd-DeJ" id="3th-oI-rEf"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="7QW-bP-Vev" id="8Fj-ft-Id9"/>
+                            <outlet property="delegate" destination="7QW-bP-Vev" id="1yb-H2-5Qw"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="lRA-px-STX" kind="popoverPresentation" identifier="timePop" popoverAnchorView="mrh-uA-1Dn" id="ddx-ZI-V8Q">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                        </segue>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aDF-Ov-4nC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3842.4000000000001" y="-1558.4707646176912"/>
+        </scene>
+        <!--Time Update View Controller-->
+        <scene sceneID="67V-dr-xdM">
+            <objects>
+                <viewController id="lRA-px-STX" customClass="TimeUpdateViewController" customModule="trucksOfFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b0c-ur-OzG"/>
+                        <viewControllerLayoutGuide type="bottom" id="9NK-PD-2cX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8HO-RE-bSL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="cP0-zW-ZAq">
+                                <rect key="frame" x="-10" y="0.0" width="340" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="340" id="1br-Qu-wC2"/>
+                                    <constraint firstAttribute="height" constant="80" id="A4e-tz-Sgu"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="520968152.67197299">
+                                    <!--2017-07-05 17:22:32 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="timeChanged:" destination="lRA-px-STX" eventType="valueChanged" id="Apa-ev-jlA"/>
+                                </connections>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATL-ob-0aS">
+                                <rect key="frame" x="134.5" y="70" width="51" height="30"/>
+                                <state key="normal" title="Update"/>
+                                <connections>
+                                    <action selector="timeChangedButton:" destination="lRA-px-STX" eventType="touchUpInside" id="G3n-en-mev"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ATL-ob-0aS" secondAttribute="bottom" constant="20" symbolic="YES" id="9uj-CZ-IqZ"/>
+                            <constraint firstItem="9NK-PD-2cX" firstAttribute="top" secondItem="cP0-zW-ZAq" secondAttribute="bottom" constant="40" id="a4v-Xq-nU1"/>
+                            <constraint firstItem="cP0-zW-ZAq" firstAttribute="top" secondItem="8HO-RE-bSL" secondAttribute="top" id="gnp-M7-ggV"/>
+                            <constraint firstItem="cP0-zW-ZAq" firstAttribute="centerX" secondItem="8HO-RE-bSL" secondAttribute="centerX" id="hwD-x5-9g2"/>
+                            <constraint firstItem="ATL-ob-0aS" firstAttribute="centerX" secondItem="cP0-zW-ZAq" secondAttribute="centerX" id="sRC-er-7TM"/>
+                            <constraint firstItem="cP0-zW-ZAq" firstAttribute="leading" secondItem="8HO-RE-bSL" secondAttribute="leadingMargin" constant="-26" id="sSx-FF-lr0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="timeUpdatePicker" destination="cP0-zW-ZAq" id="qXY-6W-CcV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DaH-5f-qpT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4720" y="-1506"/>
         </scene>
         <!--Truck Main Menu Table View Controller-->
         <scene sceneID="bm3-EH-e27">
@@ -92,6 +287,8 @@
                         <segue destination="v25-Jr-3Z2" kind="show" identifier="truckInfo" id="kNO-vU-Ugy"/>
                         <segue destination="JyS-7Z-fqE" kind="show" identifier="menuItems" id="KDA-Wp-Gua"/>
                         <segue destination="dZ2-vB-dTg" kind="show" identifier="truckListForTime" id="YOn-Q6-7oj"/>
+                        <segue destination="Hwn-Y6-wq6" kind="show" identifier="truckListForLocation" id="JwE-5O-9tu"/>
+                        <segue destination="d8E-Xx-2SS" kind="show" identifier="settings" id="iep-yp-72U"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7FJ-70-UFG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -576,6 +773,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="kNO-vU-Ugy"/>
+        <segue reference="GpA-Q0-vae"/>
     </inferredMetricsTieBreakers>
 </document>

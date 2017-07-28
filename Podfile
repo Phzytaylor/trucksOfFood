@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+# platform :ios, '11.0'
 
 target 'trucksOfFood' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -18,9 +18,14 @@ pod 'Firebase/Messaging'
 pod ‘OneSignal’
 pod ‘BWWalkthrough’
 pod 'DZNEmptyDataSet'
-pod 'Kingfisher'
+pod 'Kingfisher', :git => 'https://github.com/onevcat/Kingfisher.git', :branch => 'swift4'
 pod 'BEMCheckBox'
-pod ‘Eureka’
+pod 'Eureka', :git => 'https://github.com/xmartlabs/Eureka.git', :branch => 'swift-4'
 pod 'ImageRow'
 pod ‘PostalAddressRow’
+pod 'Stripe'
+pod 'SwipeableTabBarController'
+pod 'Alamofire'
+pod 'SVProgressHUD'
+pod 'PMAlertController'
 end

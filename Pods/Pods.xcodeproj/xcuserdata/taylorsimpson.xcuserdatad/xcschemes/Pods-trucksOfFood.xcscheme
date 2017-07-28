@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "742503AC514033F00EA0A0BF1812ADCB"
+               BlueprintIdentifier = "DD0F26B1B3ECBF01B3E20441ED8D88FB"
                BuildableName = "Pods_trucksOfFood.framework"
                BlueprintName = "Pods-trucksOfFood"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -36,6 +37,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -45,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "742503AC514033F00EA0A0BF1812ADCB"
+            BlueprintIdentifier = "DD0F26B1B3ECBF01B3E20441ED8D88FB"
             BuildableName = "Pods_trucksOfFood.framework"
             BlueprintName = "Pods-trucksOfFood"
             ReferencedContainer = "container:Pods.xcodeproj">

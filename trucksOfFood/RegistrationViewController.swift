@@ -42,7 +42,7 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBOutlet weak var regIndicator: UIActivityIndicatorView!
-     let titleDict: NSDictionary = [NSForegroundColorAttributeName: UIColor.white]
+    let titleDict: NSDictionary = [NSAttributedStringKey.foregroundColor: UIColor.white]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,7 +52,7 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         self.title = "Registration"
         
        
-        self.navigationController?.navigationBar.titleTextAttributes = titleDict as? [String : Any]
+        self.navigationController?.navigationBar.titleTextAttributes = titleDict as! [NSAttributedStringKey : Any]
         
         
         self.emailTextField.heightAnchor.constraint(equalToConstant: 50).isActive = true

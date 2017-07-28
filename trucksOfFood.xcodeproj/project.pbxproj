@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		46932853AD6FD4271D449B11 /* Pods_trucksOfFood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C980DC82B747FFBFA4A5778 /* Pods_trucksOfFood.framework */; };
+		82075B601F2BB3F500673D7A /* menu_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 82075B5F1F2BB3E700673D7A /* menu_filled.png */; };
+		82075B621F2BDBBE00673D7A /* banknotes.png in Resources */ = {isa = PBXBuildFile; fileRef = 82075B611F2BB8A100673D7A /* banknotes.png */; };
 		821100671EE206FD00C2FEEA /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821100661EE206FD00C2FEEA /* RegistrationViewController.swift */; };
 		821100691EE5E5CC00C2FEEA /* userViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821100681EE5E5CC00C2FEEA /* userViewController.swift */; };
 		821100701EE6649600C2FEEA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8211006F1EE6649600C2FEEA /* CoreLocation.framework */; };
@@ -31,13 +33,35 @@
 		8255D7B61F044F7C00BCFB0C /* credit-card.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8255D7B51F044F7C00BCFB0C /* credit-card.jpeg */; };
 		8255D7B81F07197A00BCFB0C /* iphone.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8255D7B71F07197A00BCFB0C /* iphone.jpeg */; };
 		8255D7BA1F07537100BCFB0C /* MenuItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8255D7B91F07537100BCFB0C /* MenuItemsTableViewController.swift */; };
+		8259607D1F0F546C00EE6904 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8259607C1F0F546C00EE6904 /* SettingsTableViewController.swift */; };
+		825960811F0FCC2B00EE6904 /* Customer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 825960801F0FCC2B00EE6904 /* Customer.storyboard */; };
+		825960831F0FF7FF00EE6904 /* CustomerMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825960821F0FF7FF00EE6904 /* CustomerMainViewController.swift */; };
+		825960871F10168F00EE6904 /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 825960861F10168F00EE6904 /* location.png */; };
+		826097B71F226939006DAF7C /* nearByFood.png in Resources */ = {isa = PBXBuildFile; fileRef = 826097B61F226939006DAF7C /* nearByFood.png */; };
+		826276871F1982D400A53B38 /* foodtruck.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 826276861F1982D400A53B38 /* foodtruck.jpg */; };
+		826276891F1987EE00A53B38 /* TypesOfFoodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826276881F1987EE00A53B38 /* TypesOfFoodTableViewController.swift */; };
+		8262768E1F19C7E300A53B38 /* MenuListForCustomerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8262768D1F19C7E300A53B38 /* MenuListForCustomerTableViewController.swift */; };
+		8274BD631F1537BE00B23303 /* FoodTruckAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8274BD621F1537BE00B23303 /* FoodTruckAnnotation.swift */; };
+		8274BD651F15924B00B23303 /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8274BD641F15924B00B23303 /* VCMapView.swift */; };
+		82AA3C0E1F1C844000530015 /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AA3C0D1F1C844000530015 /* CheckOutViewController.swift */; };
+		82AA3C1A1F1D859500530015 /* ProductClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AA3C191F1D859500530015 /* ProductClass.swift */; };
+		82AA3C1E1F1D9B0700530015 /* MyAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AA3C1D1F1D9B0700530015 /* MyAPIClient.swift */; };
 		82BE57871F09CC260090A2AA /* MenuClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BE57861F09CC260090A2AA /* MenuClass.swift */; };
 		82BE57891F0B33C30090A2AA /* ListOfMenusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BE57881F0B33C30090A2AA /* ListOfMenusTableViewController.swift */; };
+		82BE578D1F0C0B000090A2AA /* TruckListForTimesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BE578C1F0C0B000090A2AA /* TruckListForTimesTableViewController.swift */; };
+		82BE578F1F0C0F040090A2AA /* TruckTimesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BE578E1F0C0F040090A2AA /* TruckTimesTableViewController.swift */; };
+		82BE57911F0D60AE0090A2AA /* TimeUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BE57901F0D60AE0090A2AA /* TimeUpdateViewController.swift */; };
+		82BE57941F0D88320090A2AA /* TrucksForLocationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BE57931F0D88320090A2AA /* TrucksForLocationTableViewController.swift */; };
+		82BE57961F0DCB5D0090A2AA /* ManualLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BE57951F0DCB5D0090A2AA /* ManualLocationViewController.swift */; };
+		82C669A81F26EB3D00051074 /* myLocation.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C669A71F26EA5500051074 /* myLocation.png */; };
+		82C669A91F26EBB800051074 /* icons8-point_objects_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C669A51F26E48D00051074 /* icons8-point_objects_filled.png */; };
 		82CCD4F51EE9C7C6004040ED /* TruckUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CCD4F41EE9C7C6004040ED /* TruckUploadViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6C980DC82B747FFBFA4A5778 /* Pods_trucksOfFood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_trucksOfFood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82075B5F1F2BB3E700673D7A /* menu_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_filled.png; sourceTree = "<group>"; };
+		82075B611F2BB8A100673D7A /* banknotes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banknotes.png; sourceTree = "<group>"; };
 		821100661EE206FD00C2FEEA /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		821100681EE5E5CC00C2FEEA /* userViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userViewController.swift; sourceTree = "<group>"; };
 		8211006F1EE6649600C2FEEA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -63,9 +87,29 @@
 		8255D7B51F044F7C00BCFB0C /* credit-card.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "credit-card.jpeg"; sourceTree = "<group>"; };
 		8255D7B71F07197A00BCFB0C /* iphone.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iphone.jpeg; sourceTree = "<group>"; };
 		8255D7B91F07537100BCFB0C /* MenuItemsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemsTableViewController.swift; sourceTree = "<group>"; };
+		8259607C1F0F546C00EE6904 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		825960801F0FCC2B00EE6904 /* Customer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Customer.storyboard; sourceTree = "<group>"; };
+		825960821F0FF7FF00EE6904 /* CustomerMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerMainViewController.swift; sourceTree = "<group>"; };
+		825960861F10168F00EE6904 /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
+		826097B61F226939006DAF7C /* nearByFood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nearByFood.png; sourceTree = "<group>"; };
+		826276861F1982D400A53B38 /* foodtruck.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = foodtruck.jpg; sourceTree = "<group>"; };
+		826276881F1987EE00A53B38 /* TypesOfFoodTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypesOfFoodTableViewController.swift; sourceTree = "<group>"; };
+		8262768D1F19C7E300A53B38 /* MenuListForCustomerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuListForCustomerTableViewController.swift; sourceTree = "<group>"; };
+		8274BD621F1537BE00B23303 /* FoodTruckAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTruckAnnotation.swift; sourceTree = "<group>"; };
+		8274BD641F15924B00B23303 /* VCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMapView.swift; sourceTree = "<group>"; };
+		82AA3C0D1F1C844000530015 /* CheckOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckOutViewController.swift; sourceTree = "<group>"; };
+		82AA3C191F1D859500530015 /* ProductClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductClass.swift; sourceTree = "<group>"; };
+		82AA3C1D1F1D9B0700530015 /* MyAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAPIClient.swift; sourceTree = "<group>"; };
 		82BE57861F09CC260090A2AA /* MenuClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuClass.swift; sourceTree = "<group>"; };
 		82BE57881F0B33C30090A2AA /* ListOfMenusTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfMenusTableViewController.swift; sourceTree = "<group>"; };
+		82BE578C1F0C0B000090A2AA /* TruckListForTimesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TruckListForTimesTableViewController.swift; sourceTree = "<group>"; };
+		82BE578E1F0C0F040090A2AA /* TruckTimesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TruckTimesTableViewController.swift; sourceTree = "<group>"; };
+		82BE57901F0D60AE0090A2AA /* TimeUpdateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeUpdateViewController.swift; sourceTree = "<group>"; };
+		82BE57931F0D88320090A2AA /* TrucksForLocationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrucksForLocationTableViewController.swift; sourceTree = "<group>"; };
+		82BE57951F0DCB5D0090A2AA /* ManualLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualLocationViewController.swift; sourceTree = "<group>"; };
 		82C3C39F038570AB65261FC0 /* Pods-trucksOfFood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trucksOfFood.release.xcconfig"; path = "Pods/Target Support Files/Pods-trucksOfFood/Pods-trucksOfFood.release.xcconfig"; sourceTree = "<group>"; };
+		82C669A51F26E48D00051074 /* icons8-point_objects_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-point_objects_filled.png"; sourceTree = "<group>"; };
+		82C669A71F26EA5500051074 /* myLocation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myLocation.png; sourceTree = "<group>"; };
 		82CCD4F41EE9C7C6004040ED /* TruckUploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TruckUploadViewController.swift; sourceTree = "<group>"; };
 		A5DF0C828E393A6E2403DE03 /* Pods-trucksOfFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trucksOfFood.debug.xcconfig"; path = "Pods/Target Support Files/Pods-trucksOfFood/Pods-trucksOfFood.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,16 +169,21 @@
 				824375161EF5E4D900754BB1 /* Eurka+Firebase.swift */,
 				824F3B2C1EE08597000FC8CC /* AppDelegate.swift */,
 				824F3B2E1EE08597000FC8CC /* ViewController.swift */,
-				82CCD4F41EE9C7C6004040ED /* TruckUploadViewController.swift */,
-				824F3B301EE08597000FC8CC /* Main.storyboard */,
-				8255D7AB1F032CF500BCFB0C /* truckMainMenuTableViewCell.swift */,
-				8255D7B11F033D8900BCFB0C /* ImageViewGradientExtention.swift */,
-				8255D7AD1F032FBD00BCFB0C /* TruckMainMenuTableViewController.swift */,
-				821100681EE5E5CC00C2FEEA /* userViewController.swift */,
+				8259607C1F0F546C00EE6904 /* SettingsTableViewController.swift */,
 				821100661EE206FD00C2FEEA /* RegistrationViewController.swift */,
+				8259607F1F0FCBC000EE6904 /* Customer Files */,
+				8259607E1F0FC9C900EE6904 /* Truck Files */,
 				82BE578B1F0C08490090A2AA /* Time Files */,
 				82BE578A1F0B34030090A2AA /* Menu Files */,
+				82BE57921F0D87E00090A2AA /* LocationFiles */,
 				824F3B331EE08597000FC8CC /* Assets.xcassets */,
+				82075B611F2BB8A100673D7A /* banknotes.png */,
+				82075B5F1F2BB3E700673D7A /* menu_filled.png */,
+				82C669A71F26EA5500051074 /* myLocation.png */,
+				82C669A51F26E48D00051074 /* icons8-point_objects_filled.png */,
+				826097B61F226939006DAF7C /* nearByFood.png */,
+				826276861F1982D400A53B38 /* foodtruck.jpg */,
+				825960861F10168F00EE6904 /* location.png */,
 				8255D7B51F044F7C00BCFB0C /* credit-card.jpeg */,
 				8255D7B31F0342BD00BCFB0C /* location.gif */,
 				8255D7A71F032B2500BCFB0C /* timePhoto.jpeg */,
@@ -146,6 +195,35 @@
 				821100711EE74B7900C2FEEA /* LocationStruct.swift */,
 			);
 			path = trucksOfFood;
+			sourceTree = "<group>";
+		};
+		8259607E1F0FC9C900EE6904 /* Truck Files */ = {
+			isa = PBXGroup;
+			children = (
+				82CCD4F41EE9C7C6004040ED /* TruckUploadViewController.swift */,
+				8255D7AB1F032CF500BCFB0C /* truckMainMenuTableViewCell.swift */,
+				8255D7B11F033D8900BCFB0C /* ImageViewGradientExtention.swift */,
+				8255D7AD1F032FBD00BCFB0C /* TruckMainMenuTableViewController.swift */,
+				821100681EE5E5CC00C2FEEA /* userViewController.swift */,
+				824F3B301EE08597000FC8CC /* Main.storyboard */,
+			);
+			name = "Truck Files";
+			sourceTree = "<group>";
+		};
+		8259607F1F0FCBC000EE6904 /* Customer Files */ = {
+			isa = PBXGroup;
+			children = (
+				825960801F0FCC2B00EE6904 /* Customer.storyboard */,
+				8274BD641F15924B00B23303 /* VCMapView.swift */,
+				825960821F0FF7FF00EE6904 /* CustomerMainViewController.swift */,
+				8274BD621F1537BE00B23303 /* FoodTruckAnnotation.swift */,
+				826276881F1987EE00A53B38 /* TypesOfFoodTableViewController.swift */,
+				8262768D1F19C7E300A53B38 /* MenuListForCustomerTableViewController.swift */,
+				82AA3C0D1F1C844000530015 /* CheckOutViewController.swift */,
+				82AA3C191F1D859500530015 /* ProductClass.swift */,
+				82AA3C1D1F1D9B0700530015 /* MyAPIClient.swift */,
+			);
+			name = "Customer Files";
 			sourceTree = "<group>";
 		};
 		82BE578A1F0B34030090A2AA /* Menu Files */ = {
@@ -164,8 +242,20 @@
 		82BE578B1F0C08490090A2AA /* Time Files */ = {
 			isa = PBXGroup;
 			children = (
+				82BE578C1F0C0B000090A2AA /* TruckListForTimesTableViewController.swift */,
+				82BE57901F0D60AE0090A2AA /* TimeUpdateViewController.swift */,
+				82BE578E1F0C0F040090A2AA /* TruckTimesTableViewController.swift */,
 			);
 			name = "Time Files";
+			sourceTree = "<group>";
+		};
+		82BE57921F0D87E00090A2AA /* LocationFiles */ = {
+			isa = PBXGroup;
+			children = (
+				82BE57931F0D88320090A2AA /* TrucksForLocationTableViewController.swift */,
+				82BE57951F0DCB5D0090A2AA /* ManualLocationViewController.swift */,
+			);
+			name = LocationFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,12 +288,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Taylor Simpson";
 				TargetAttributes = {
 					824F3B281EE08597000FC8CC = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = TR2MLK3WQ4;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -231,9 +322,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				826276871F1982D400A53B38 /* foodtruck.jpg in Resources */,
 				824F3B371EE08597000FC8CC /* LaunchScreen.storyboard in Resources */,
+				82C669A81F26EB3D00051074 /* myLocation.png in Resources */,
 				8255D7AA1F032B2500BCFB0C /* menuPhoto.jpeg in Resources */,
 				8255D7A91F032B2500BCFB0C /* timePhoto.jpeg in Resources */,
+				82C669A91F26EBB800051074 /* icons8-point_objects_filled.png in Resources */,
+				825960871F10168F00EE6904 /* location.png in Resources */,
+				82075B601F2BB3F500673D7A /* menu_filled.png in Resources */,
+				825960811F0FCC2B00EE6904 /* Customer.storyboard in Resources */,
+				82075B621F2BDBBE00673D7A /* banknotes.png in Resources */,
+				826097B71F226939006DAF7C /* nearByFood.png in Resources */,
 				8228A9381EF2ECE900F1CD6B /* MenuItemCell.xib in Resources */,
 				8255D7B81F07197A00BCFB0C /* iphone.jpeg in Resources */,
 				824F3B341EE08597000FC8CC /* Assets.xcassets in Resources */,
@@ -268,9 +367,50 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-trucksOfFood/Pods-trucksOfFood-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BEMCheckBox/BEMCheckBox.framework",
+				"${BUILT_PRODUCTS_DIR}/BWWalkthrough/BWWalkthrough.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ImageRow/ImageRow.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/PMAlertController/PMAlertController.framework",
+				"${BUILT_PRODUCTS_DIR}/PostalAddressRow/PostalAddressRow.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeableTabBarController/SwipeableTabBarController.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BEMCheckBox.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BWWalkthrough.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageRow.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PMAlertController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PostalAddressRow.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeableTabBarController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -283,13 +423,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-trucksOfFood-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -303,17 +446,31 @@
 				821100721EE74B7900C2FEEA /* LocationStruct.swift in Sources */,
 				8228A93C1EF34E5100F1CD6B /* menuItemRow.swift in Sources */,
 				824375171EF5E4D900754BB1 /* Eurka+Firebase.swift in Sources */,
+				82AA3C1A1F1D859500530015 /* ProductClass.swift in Sources */,
+				82BE57911F0D60AE0090A2AA /* TimeUpdateViewController.swift in Sources */,
 				82BE57891F0B33C30090A2AA /* ListOfMenusTableViewController.swift in Sources */,
 				8228A9371EF2ECE900F1CD6B /* MenuItemCell.swift in Sources */,
+				82BE578F1F0C0F040090A2AA /* TruckTimesTableViewController.swift in Sources */,
+				825960831F0FF7FF00EE6904 /* CustomerMainViewController.swift in Sources */,
 				82BE57871F09CC260090A2AA /* MenuClass.swift in Sources */,
 				82CCD4F51EE9C7C6004040ED /* TruckUploadViewController.swift in Sources */,
 				8255D7AE1F032FBD00BCFB0C /* TruckMainMenuTableViewController.swift in Sources */,
+				82AA3C0E1F1C844000530015 /* CheckOutViewController.swift in Sources */,
+				8274BD651F15924B00B23303 /* VCMapView.swift in Sources */,
 				821100671EE206FD00C2FEEA /* RegistrationViewController.swift in Sources */,
+				82BE578D1F0C0B000090A2AA /* TruckListForTimesTableViewController.swift in Sources */,
+				82BE57941F0D88320090A2AA /* TrucksForLocationTableViewController.swift in Sources */,
 				821100691EE5E5CC00C2FEEA /* userViewController.swift in Sources */,
+				82BE57961F0DCB5D0090A2AA /* ManualLocationViewController.swift in Sources */,
+				8274BD631F1537BE00B23303 /* FoodTruckAnnotation.swift in Sources */,
+				82AA3C1E1F1D9B0700530015 /* MyAPIClient.swift in Sources */,
 				824F3B2F1EE08597000FC8CC /* ViewController.swift in Sources */,
 				8255D7B21F033D8900BCFB0C /* ImageViewGradientExtention.swift in Sources */,
+				826276891F1987EE00A53B38 /* TypesOfFoodTableViewController.swift in Sources */,
 				824F3B2D1EE08597000FC8CC /* AppDelegate.swift in Sources */,
 				8255D7BA1F07537100BCFB0C /* MenuItemsTableViewController.swift in Sources */,
+				8262768E1F19C7E300A53B38 /* MenuListForCustomerTableViewController.swift in Sources */,
+				8259607D1F0F546C00EE6904 /* SettingsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +506,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -357,7 +516,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -399,7 +562,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -407,7 +572,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -442,7 +611,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Taylor.trucksOfFood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -456,7 +626,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Taylor.trucksOfFood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

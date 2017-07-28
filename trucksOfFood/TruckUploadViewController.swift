@@ -348,7 +348,7 @@ class TruckUploadViewController: FormViewController, CLLocationManagerDelegate {
         
         
         
-       
+            var currentDate = Date().timeIntervalSince1970
         
         
         
@@ -369,13 +369,13 @@ class TruckUploadViewController: FormViewController, CLLocationManagerDelegate {
                 
                 print("No access")
                 
-                foodTruck = ["truckName": valuesDictionary["truckName"]!, "foodType": valuesDictionary["foodType"]!, "averagePrice": valuesDictionary["averagePrice"]!, "customerFavorite": valuesDictionary["customerFavorite"]!, "openTime": myOpenTime!, "closedTime": myCloseTime!, "street": truckPostalAdd?.street!, "zipCode": truckPostalAdd?.postalCode!, "city": truckPostalAdd?.city!, "state": truckPostalAdd?.state!, "country": truckPostalAdd?.country, "userID": userID]
+                foodTruck = ["truckName": valuesDictionary["truckName"]!, "foodType": valuesDictionary["foodType"]!, "averagePrice": valuesDictionary["averagePrice"]!, "customerFavorite": valuesDictionary["customerFavorite"]!, "openTime": myOpenTime!, "closedTime": myCloseTime!, "street": truckPostalAdd?.street!, "zipCode": truckPostalAdd?.postalCode!, "city": truckPostalAdd?.city!, "state": truckPostalAdd?.state!, "country": truckPostalAdd?.country, "userID": userID, "locationUpdated": currentDate, "gpsTest": false]
                 
             case .authorizedAlways, .authorizedWhenInUse:
                 
                 print ("Acess")
                 
-                 foodTruck = ["truckName": valuesDictionary["truckName"]!, "foodType": valuesDictionary["foodType"]!, "averagePrice": valuesDictionary["averagePrice"]!, "customerFavorite": valuesDictionary["customerFavorite"]!, "openTime": myOpenTime!, "closedTime": myCloseTime!, "street": truckPostalAdd?.street!, "zipCode": truckPostalAdd?.postalCode!, "city": truckPostalAdd?.city!, "state": truckPostalAdd?.state!, "country": truckPostalAdd?.country!,"truckLat":String(truckLocation.coordinate.latitude), "truckLong": String(truckLocation.coordinate.longitude), "userID": userID]
+                 foodTruck = ["truckName": valuesDictionary["truckName"]!, "foodType": valuesDictionary["foodType"]!, "averagePrice": valuesDictionary["averagePrice"]!, "customerFavorite": valuesDictionary["customerFavorite"]!, "openTime": myOpenTime!, "closedTime": myCloseTime!, "street": truckPostalAdd?.street!, "zipCode": truckPostalAdd?.postalCode!, "city": truckPostalAdd?.city!, "state": truckPostalAdd?.state!, "country": truckPostalAdd?.country!,"truckLat":truckLocation.coordinate.latitude, "truckLong": truckLocation.coordinate.longitude, "userID": userID, "locationUpdated": currentDate, "gpsTest": true]
                 
             
             
@@ -385,7 +385,7 @@ class TruckUploadViewController: FormViewController, CLLocationManagerDelegate {
         
             print("Location Services Not Enabled")
             
-            foodTruck = ["truckName": valuesDictionary["truckName"]!, "foodType": valuesDictionary["foodType"]!, "averagePrice": valuesDictionary["averagePrice"]!, "customerFavorite": valuesDictionary["customerFavorite"]!, "openTime": myOpenTime!, "closedTime": myCloseTime!, "street": truckPostalAdd?.street!, "zipCode": truckPostalAdd?.postalCode!, "city": truckPostalAdd?.city!, "state": truckPostalAdd?.state!, "country": truckPostalAdd?.country, "userID": userID]
+            foodTruck = ["truckName": valuesDictionary["truckName"]!, "foodType": valuesDictionary["foodType"]!, "averagePrice": valuesDictionary["averagePrice"]!, "customerFavorite": valuesDictionary["customerFavorite"]!, "openTime": myOpenTime!, "closedTime": myCloseTime!, "street": truckPostalAdd?.street!, "zipCode": truckPostalAdd?.postalCode!, "city": truckPostalAdd?.city!, "state": truckPostalAdd?.state!, "country": truckPostalAdd?.country, "userID": userID, "locationUpdated": currentDate, "gpsTest": false]
         
         
         }

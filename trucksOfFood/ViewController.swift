@@ -12,6 +12,7 @@ import FBSDKLoginKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
+    var authStateCheck: AuthStateDidChangeListenerHandle!
     
     @IBOutlet weak var loginSpinner: UIActivityIndicatorView!
     
@@ -183,6 +184,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let noAction = UIAlertAction(title: "No", style: .cancel, handler: { (UIAlertAction) in
             print("No")
             
+            let defaults = UserDefaults.standard
+
+
+            
+            defaults.set(false, forKey: "isTruckDriver")
+            
+            defaults.set(1, forKey: "shownCheck")
+
             
             let fbLoginManager = FBSDKLoginManager()
             fbLoginManager.logIn(withReadPermissions: ["public_profile", "email"], from: self) { (result, error) in
@@ -328,7 +337,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         passwordField.delegate = self
         
         
-        Auth.auth().addStateDidChangeListener { (auth, user) in
+       self.authStateCheck  = Auth.auth().addStateDidChangeListener { (auth, user) in
             // ...
             
             
@@ -345,8 +354,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 
                 
                 // ...
-            } else {
+            } else if Auth.auth().currentUser != nil && isTruckDriver == false {
                 // No user is signed in.
+                
+                
+                let customerStoryboard: UIStoryboard = UIStoryboard(name:"Customer", bundle: nil)
+                
+                
+                let customerViewController: UIViewController = customerStoryboard.instantiateViewController(withIdentifier: "customer")
+                
+                
+                self.present(customerViewController, animated: true, completion: nil)
                 // ...
             }
             
@@ -357,7 +375,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         
         
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        Auth.auth().removeStateDidChangeListener(self.authStateCheck)
     }
     @IBAction func userLoginButton(_ sender: Any) {
         

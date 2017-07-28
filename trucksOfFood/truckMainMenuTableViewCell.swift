@@ -47,3 +47,44 @@ class MenuItemsCell: UITableViewCell {
 
 
 }
+
+
+
+class TimeCell: UITableViewCell {
+
+    @IBOutlet weak var openOrClosedLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+        
+        // Configure the view for the selected state
+    }
+
+
+}
+
+class CustomerMenuItemsCell: UITableViewCell {
+
+    @IBOutlet weak var price: UILabel!
+    @IBOutlet weak var menuItem: UILabel!
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+    
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+        
+        // Configure the view for the selected state
+    }
+    
+
+
+}
+
+

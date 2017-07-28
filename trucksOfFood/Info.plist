@@ -54,6 +54,8 @@
 	<string>This app uses your camera and photo library to upload your menus</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Food Trucks!</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>To give you the best experience</string>
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleLightContent</string>
 	<key>UIViewControllerBasedStatusBarAppearance</key>

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class TruckMainMenuTableViewController: UITableViewController {
 
@@ -15,16 +16,43 @@ class TruckMainMenuTableViewController: UITableViewController {
         
         title = "Main Menu"
         
+        
+       
+        
+        self.navigationController?.navigationBar.tintColor = .white
+
         self.navigationController?.navigationBar.barTintColor = UIColor(hue: 0.3472, saturation: 0.8, brightness: 0.41, alpha: 1.0)
         
+      var settingsButton =  UIBarButtonItem(title:NSString(string: "\u{2699}\u{0000FE0E}") as String , style: .plain, target: self, action: #selector(accountOptions))
         
+        
+        let font = UIFont.systemFont(ofSize: 28) // adjust the size as required
+        let attributes = [NSAttributedStringKey.font : font]
+        
+        settingsButton.setTitleTextAttributes(attributes, for: .normal)
+        
+        
+        navigationItem.rightBarButtonItem = settingsButton
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        
+        
+        
     }
+    
+    func accountOptions () {
+        performSegue(withIdentifier: "settings", sender: TruckMainMenuTableViewController())
+    
+    
+    }
+        
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -57,7 +85,14 @@ class TruckMainMenuTableViewController: UITableViewController {
         
         
         performSegue(withIdentifier: "menuItems", sender: TruckMainMenuTableViewController())
+            
+        case 2:
+            
+            performSegue(withIdentifier: "truckListForTime", sender: TruckMainMenuTableViewController())
         
+        case 3:
+            
+            performSegue(withIdentifier: "truckListForLocation", sender: TruckMainMenuTableViewController())
         
         default:
         

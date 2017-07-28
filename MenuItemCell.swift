@@ -114,7 +114,7 @@ open class _MenuItemCell<T: MenuItemType>: Cell<T>, CellType, MenuItemCellConfor
         
             if let color = (row as? MenuItemRowConformance)?.placeholderColor{
             
-                textField.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [NSForegroundColorAttributeName: color])
+                textField.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [NSAttributedStringKey.foregroundColor: color])
             
             } else{
             

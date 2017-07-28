@@ -10,6 +10,8 @@ import UIKit
 import Firebase
 import FBSDKCoreKit
 import FBSDKLoginKit
+import Stripe
+import SVProgressHUD
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,15 +23,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
         
+         STPPaymentConfiguration.shared().publishableKey = "pk_test_CR6wYwSMG1sTtdmpzrusn8hj"
+        
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
        UIApplication.shared.statusBarStyle = .lightContent
         
         var navigationBarAppearace = UINavigationBar.appearance()
         
-        navigationBarAppearace.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
+        navigationBarAppearace.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
         
         
+        STPPaymentConfiguration.shared().requiredBillingAddressFields = .full
+        STPPaymentConfiguration.shared().companyName = "Food Truck"
+        STPTheme.default().primaryForegroundColor = UIColor.black
+        STPTheme.default().primaryBackgroundColor = UIColor.darkGray
+        STPTheme.default().secondaryBackgroundColor = UIColor.lightGray
+        STPTheme.default().primaryForegroundColor = UIColor.white
+        STPTheme.default().secondaryForegroundColor = UIColor.white
         // Override point for customization after application launch.
         return true
     }
