@@ -14,6 +14,8 @@
 		821100691EE5E5CC00C2FEEA /* userViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821100681EE5E5CC00C2FEEA /* userViewController.swift */; };
 		821100701EE6649600C2FEEA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8211006F1EE6649600C2FEEA /* CoreLocation.framework */; };
 		821100721EE74B7900C2FEEA /* LocationStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821100711EE74B7900C2FEEA /* LocationStruct.swift */; };
+		822561041F3402A800E7528F /* verify.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 822561031F3402A400E7528F /* verify.jpeg */; };
+		822561061F34043C00E7528F /* VerifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822561051F34043C00E7528F /* VerifyViewController.swift */; };
 		8228A9371EF2ECE900F1CD6B /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8228A9351EF2ECE900F1CD6B /* MenuItemCell.swift */; };
 		8228A9381EF2ECE900F1CD6B /* MenuItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8228A9361EF2ECE900F1CD6B /* MenuItemCell.xib */; };
 		8228A93C1EF34E5100F1CD6B /* menuItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8228A93B1EF34E5100F1CD6B /* menuItemRow.swift */; };
@@ -24,6 +26,8 @@
 		824F3B341EE08597000FC8CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 824F3B331EE08597000FC8CC /* Assets.xcassets */; };
 		824F3B371EE08597000FC8CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 824F3B351EE08597000FC8CC /* LaunchScreen.storyboard */; };
 		824F3B3F1EE0B1D1000FC8CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 824F3B3E1EE0B1D1000FC8CC /* GoogleService-Info.plist */; };
+		82506E941F39505A00CF7002 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82506E931F39505A00CF7002 /* StorageService.swift */; };
+		82506E961F395AC900CF7002 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82506E951F395AC900CF7002 /* PostService.swift */; };
 		8255D7A91F032B2500BCFB0C /* timePhoto.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8255D7A71F032B2500BCFB0C /* timePhoto.jpeg */; };
 		8255D7AA1F032B2500BCFB0C /* menuPhoto.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8255D7A81F032B2500BCFB0C /* menuPhoto.jpeg */; };
 		8255D7AC1F032CF500BCFB0C /* truckMainMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8255D7AB1F032CF500BCFB0C /* truckMainMenuTableViewCell.swift */; };
@@ -43,9 +47,11 @@
 		8262768E1F19C7E300A53B38 /* MenuListForCustomerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8262768D1F19C7E300A53B38 /* MenuListForCustomerTableViewController.swift */; };
 		8274BD631F1537BE00B23303 /* FoodTruckAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8274BD621F1537BE00B23303 /* FoodTruckAnnotation.swift */; };
 		8274BD651F15924B00B23303 /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8274BD641F15924B00B23303 /* VCMapView.swift */; };
+		829AC93E1F33B9C600EB9611 /* verify.png in Resources */ = {isa = PBXBuildFile; fileRef = 829AC93D1F33B9B600EB9611 /* verify.png */; };
 		82AA3C0E1F1C844000530015 /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AA3C0D1F1C844000530015 /* CheckOutViewController.swift */; };
 		82AA3C1A1F1D859500530015 /* ProductClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AA3C191F1D859500530015 /* ProductClass.swift */; };
 		82AA3C1E1F1D9B0700530015 /* MyAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AA3C1D1F1D9B0700530015 /* MyAPIClient.swift */; };
+		82B8CA8D1F3BDB810032BD72 /* redX.png in Resources */ = {isa = PBXBuildFile; fileRef = 82B8CA8C1F3BDB720032BD72 /* redX.png */; };
 		82BE57871F09CC260090A2AA /* MenuClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BE57861F09CC260090A2AA /* MenuClass.swift */; };
 		82BE57891F0B33C30090A2AA /* ListOfMenusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BE57881F0B33C30090A2AA /* ListOfMenusTableViewController.swift */; };
 		82BE578D1F0C0B000090A2AA /* TruckListForTimesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BE578C1F0C0B000090A2AA /* TruckListForTimesTableViewController.swift */; };
@@ -66,6 +72,8 @@
 		821100681EE5E5CC00C2FEEA /* userViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userViewController.swift; sourceTree = "<group>"; };
 		8211006F1EE6649600C2FEEA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		821100711EE74B7900C2FEEA /* LocationStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationStruct.swift; sourceTree = "<group>"; };
+		822561031F3402A400E7528F /* verify.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = verify.jpeg; sourceTree = "<group>"; };
+		822561051F34043C00E7528F /* VerifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyViewController.swift; sourceTree = "<group>"; };
 		8228A9351EF2ECE900F1CD6B /* MenuItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItemCell.swift; path = ../MenuItemCell.swift; sourceTree = "<group>"; };
 		8228A9361EF2ECE900F1CD6B /* MenuItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuItemCell.xib; path = ../MenuItemCell.xib; sourceTree = "<group>"; };
 		8228A93B1EF34E5100F1CD6B /* menuItemRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuItemRow.swift; sourceTree = "<group>"; };
@@ -78,6 +86,8 @@
 		824F3B361EE08597000FC8CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		824F3B381EE08597000FC8CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		824F3B3E1EE0B1D1000FC8CC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		82506E931F39505A00CF7002 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		82506E951F395AC900CF7002 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		8255D7A71F032B2500BCFB0C /* timePhoto.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timePhoto.jpeg; sourceTree = "<group>"; };
 		8255D7A81F032B2500BCFB0C /* menuPhoto.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = menuPhoto.jpeg; sourceTree = "<group>"; };
 		8255D7AB1F032CF500BCFB0C /* truckMainMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = truckMainMenuTableViewCell.swift; sourceTree = "<group>"; };
@@ -97,9 +107,11 @@
 		8262768D1F19C7E300A53B38 /* MenuListForCustomerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuListForCustomerTableViewController.swift; sourceTree = "<group>"; };
 		8274BD621F1537BE00B23303 /* FoodTruckAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTruckAnnotation.swift; sourceTree = "<group>"; };
 		8274BD641F15924B00B23303 /* VCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMapView.swift; sourceTree = "<group>"; };
+		829AC93D1F33B9B600EB9611 /* verify.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = verify.png; sourceTree = "<group>"; };
 		82AA3C0D1F1C844000530015 /* CheckOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckOutViewController.swift; sourceTree = "<group>"; };
 		82AA3C191F1D859500530015 /* ProductClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductClass.swift; sourceTree = "<group>"; };
 		82AA3C1D1F1D9B0700530015 /* MyAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAPIClient.swift; sourceTree = "<group>"; };
+		82B8CA8C1F3BDB720032BD72 /* redX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redX.png; sourceTree = "<group>"; };
 		82BE57861F09CC260090A2AA /* MenuClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuClass.swift; sourceTree = "<group>"; };
 		82BE57881F0B33C30090A2AA /* ListOfMenusTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfMenusTableViewController.swift; sourceTree = "<group>"; };
 		82BE578C1F0C0B000090A2AA /* TruckListForTimesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TruckListForTimesTableViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +178,7 @@
 		824F3B2B1EE08597000FC8CC /* trucksOfFood */ = {
 			isa = PBXGroup;
 			children = (
+				82506E921F39503A00CF7002 /* services */,
 				824375161EF5E4D900754BB1 /* Eurka+Firebase.swift */,
 				824F3B2C1EE08597000FC8CC /* AppDelegate.swift */,
 				824F3B2E1EE08597000FC8CC /* ViewController.swift */,
@@ -177,6 +190,21 @@
 				82BE578A1F0B34030090A2AA /* Menu Files */,
 				82BE57921F0D87E00090A2AA /* LocationFiles */,
 				824F3B331EE08597000FC8CC /* Assets.xcassets */,
+				822561031F3402A400E7528F /* verify.jpeg */,
+				82506E911F394FDE00CF7002 /* Images */,
+				824F3B351EE08597000FC8CC /* LaunchScreen.storyboard */,
+				824F3B381EE08597000FC8CC /* Info.plist */,
+				824F3B3E1EE0B1D1000FC8CC /* GoogleService-Info.plist */,
+				821100711EE74B7900C2FEEA /* LocationStruct.swift */,
+			);
+			path = trucksOfFood;
+			sourceTree = "<group>";
+		};
+		82506E911F394FDE00CF7002 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				82B8CA8C1F3BDB720032BD72 /* redX.png */,
+				829AC93D1F33B9B600EB9611 /* verify.png */,
 				82075B611F2BB8A100673D7A /* banknotes.png */,
 				82075B5F1F2BB3E700673D7A /* menu_filled.png */,
 				82C669A71F26EA5500051074 /* myLocation.png */,
@@ -189,12 +217,17 @@
 				8255D7A71F032B2500BCFB0C /* timePhoto.jpeg */,
 				8255D7A81F032B2500BCFB0C /* menuPhoto.jpeg */,
 				8255D7B71F07197A00BCFB0C /* iphone.jpeg */,
-				824F3B351EE08597000FC8CC /* LaunchScreen.storyboard */,
-				824F3B381EE08597000FC8CC /* Info.plist */,
-				824F3B3E1EE0B1D1000FC8CC /* GoogleService-Info.plist */,
-				821100711EE74B7900C2FEEA /* LocationStruct.swift */,
 			);
-			path = trucksOfFood;
+			name = Images;
+			sourceTree = "<group>";
+		};
+		82506E921F39503A00CF7002 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				82506E931F39505A00CF7002 /* StorageService.swift */,
+				82506E951F395AC900CF7002 /* PostService.swift */,
+			);
+			name = services;
 			sourceTree = "<group>";
 		};
 		8259607E1F0FC9C900EE6904 /* Truck Files */ = {
@@ -206,6 +239,7 @@
 				8255D7AD1F032FBD00BCFB0C /* TruckMainMenuTableViewController.swift */,
 				821100681EE5E5CC00C2FEEA /* userViewController.swift */,
 				824F3B301EE08597000FC8CC /* Main.storyboard */,
+				822561051F34043C00E7528F /* VerifyViewController.swift */,
 			);
 			name = "Truck Files";
 			sourceTree = "<group>";
@@ -333,12 +367,15 @@
 				825960811F0FCC2B00EE6904 /* Customer.storyboard in Resources */,
 				82075B621F2BDBBE00673D7A /* banknotes.png in Resources */,
 				826097B71F226939006DAF7C /* nearByFood.png in Resources */,
+				82B8CA8D1F3BDB810032BD72 /* redX.png in Resources */,
 				8228A9381EF2ECE900F1CD6B /* MenuItemCell.xib in Resources */,
+				829AC93E1F33B9C600EB9611 /* verify.png in Resources */,
 				8255D7B81F07197A00BCFB0C /* iphone.jpeg in Resources */,
 				824F3B341EE08597000FC8CC /* Assets.xcassets in Resources */,
 				8255D7B41F0342BD00BCFB0C /* location.gif in Resources */,
 				8255D7B61F044F7C00BCFB0C /* credit-card.jpeg in Resources */,
 				824F3B321EE08597000FC8CC /* Main.storyboard in Resources */,
+				822561041F3402A800E7528F /* verify.jpeg in Resources */,
 				824F3B3F1EE0B1D1000FC8CC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,8 +480,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8255D7AC1F032CF500BCFB0C /* truckMainMenuTableViewCell.swift in Sources */,
+				82506E941F39505A00CF7002 /* StorageService.swift in Sources */,
 				821100721EE74B7900C2FEEA /* LocationStruct.swift in Sources */,
+				82506E961F395AC900CF7002 /* PostService.swift in Sources */,
 				8228A93C1EF34E5100F1CD6B /* menuItemRow.swift in Sources */,
+				822561061F34043C00E7528F /* VerifyViewController.swift in Sources */,
 				824375171EF5E4D900754BB1 /* Eurka+Firebase.swift in Sources */,
 				82AA3C1A1F1D859500530015 /* ProductClass.swift in Sources */,
 				82BE57911F0D60AE0090A2AA /* TimeUpdateViewController.swift in Sources */,
@@ -549,6 +589,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = "";
 			};
 			name = Debug;
 		};
@@ -597,6 +638,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

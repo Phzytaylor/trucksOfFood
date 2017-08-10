@@ -8,16 +8,51 @@
 
 import UIKit
 import FirebaseAuth
+import PMAlertController
 
 class TruckMainMenuTableViewController: UITableViewController {
+    
+    var ID: String? {
+        
+        didSet{
+            print("I was set")
+            
+            
+        }
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title = "Main Menu"
         
+        let EFIDAlert = PMAlertController(title: "Verification", description: "Enter your EIN for verifaction purposes, once verified your account will be unlocked", image: UIImage(named:"verify.png"), style: .alert)
         
+        EFIDAlert.addTextField { (textField) in
+            textField?.placeholder = "Enter EIN"
+            
+           
+            
+        }
+        
+        EFIDAlert.addAction(PMAlertAction(title: "Verify", style: .default, action: {
+           
+           let textField = EFIDAlert.textFields[0]
+            
+            print(textField.text!)
+            
+            return
+        }))
+        
+        EFIDAlert.addAction(PMAlertAction(title: "Cancel", style: .cancel, action: {
+            return
+        }))
        
+        self.present(EFIDAlert, animated: true) {
+             print("done")
+        }
+        
         
         self.navigationController?.navigationBar.tintColor = .white
 
@@ -68,7 +103,7 @@ class TruckMainMenuTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return 6
     }
 
     
@@ -93,6 +128,9 @@ class TruckMainMenuTableViewController: UITableViewController {
         case 3:
             
             performSegue(withIdentifier: "truckListForLocation", sender: TruckMainMenuTableViewController())
+        case 5:
+            
+            performSegue(withIdentifier: "truckVerifcation", sender: TruckMainMenuTableViewController())
         
         default:
         
@@ -171,6 +209,15 @@ class TruckMainMenuTableViewController: UITableViewController {
             cell.mainMenuLabel.text = "Mobile Orders"
             
             cell.mainMenuLabel.textColor = .white
+            
+        case 5:
+            
+            cell.mainMenuImage.image = UIImage(named: "verify.jpeg")
+            
+            cell.mainMenuLabel.text = "Verify Your Food Truck"
+            
+            cell.mainMenuLabel.textColor = .white
+            
             
         default:
             print("Not There")

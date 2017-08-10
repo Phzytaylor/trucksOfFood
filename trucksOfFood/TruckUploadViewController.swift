@@ -5,7 +5,11 @@
 //  Created by Taylor Simpson on 6/8/17.
 //  Copyright © 2017 Taylor Simpson. All rights reserved.
 //
-
+/*
+         This section will have to be reworked and is only accessable when a truck has been verified. There will need to be a page which shows which trucks have been verified and which trucks have not been verified. Only those trucks that have been verified may upload their info.
+ 
+ 
+*/
 import UIKit
 import Eureka
 import PostalAddressRow
